@@ -1,0 +1,27 @@
+.header {
+  height: 130px;
+  width: 100%;
+  display: flex;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.header div {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header a {
+  margin: 10px;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
