@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { VideosComponent } from './pages/videos/videos.component';
+import { CatalogComponent } from './pages/catalog/catalog.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    VideosComponent
+    VideosComponent,
+    CatalogComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,

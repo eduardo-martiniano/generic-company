@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="content">
+    <div class="categories">
+      <ul class="categories-options">
+        <li><a href="/">new</a></li>
+        <li><a href="/">all</a></li>
+        <li><a href="/">h-line</a></li>
+        <li><a href="/">jackets</a></li>
+        <li><a href="/">longsleeves</a></li>
+        <li><a href="/">pants</a></li>
+        <li><a href="/">shirts</a></li>
+        <li><a href="/">shorts</a></li>
+        <li><a href="/">sweatshirts</a></li>
+        <li><a href="/">tees</a></li>
+        <li><a href="/">accessories</a></li>
+        <li><a href="/">bags</a></li>
+        <li><a href="/">hats</a></li>
+      </ul>
+    </div>
+    <div class="products">
+      <div *ngFor="let item of products">
+        <app-product-card [product]="item"></app-product-card>
+      </div>
+    </div>
+  </div>
+</div>

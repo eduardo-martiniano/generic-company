@@ -1,0 +1,31 @@
+.informations {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+
+.card h3{
+  margin: 3px;
+  max-width: 200px;
+}
+
+.card span {
+  font-size: 20px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+}
+
+.card:hover {
+  cursor: pointer;
+  color: black;
+}

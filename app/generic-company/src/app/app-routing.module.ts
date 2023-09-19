@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { VideosComponent } from './pages/videos/videos.component';
+import { CatalogComponent } from './pages/catalog/catalog.component';
 
 const routes: Routes = [
-  // {
-  //   path: "",
-  //   component: HomeComponent
-  // },
+  {
+    path: "",
+    component: CatalogComponent
+  },
   {
     path: "videos",
     component: VideosComponent
