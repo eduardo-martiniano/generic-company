@@ -9,7 +9,7 @@ import { Product } from 'src/app/models/product';
 export class CatalogComponent implements OnInit {
 
   products: Product[] = [
-    {id: 1, name: "Anorak Logos X-HIGH Black/Navy", price: 599. comm00, imageUrl: "https://highcompanybr.com/wp-content/uploads/2023/09/Hoodie_Logos_X-High_Black-300x300.jpg"},
+    {id: 1, name: "Anorak Logos X-HIGH Black/Navy", price: 599.00, imageUrl: "https://highcompanybr.com/wp-content/uploads/2023/09/Hoodie_Logos_X-High_Black-300x300.jpg"},
     {id: 2, name: "Hoodie Logos X-HIGH Black", price: 499.90, imageUrl: "https://highcompanybr.com/wp-content/uploads/2023/09/Hoodie_Logos_X-High_Black-300x300.jpg"},
     {id: 3, name: "Hoodie Logos X-HIGH Black", price: 199.90, imageUrl: "https://highcompanybr.com/wp-content/uploads/2023/09/Crewneck_BRAXL_Black-300x300.jpg"},
     {id: 4, name: "Hoodie Logos X-HIGH Black", price: 199.90, imageUrl: "https://highcompanybr.com/wp-content/uploads/2023/09/Shorts_Logos_X-HIGH_Black-300x300.jpg"},

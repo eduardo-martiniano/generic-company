@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { VideosComponent } from './pages/videos/videos.component';
 import { CatalogComponent } from './pages/catalog/catalog.component';
+import { LookbookComponent } from './pages/lookbook/lookbook.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: "videos",
     component: VideosComponent
+  },
+  {
+    path: "lookbook",
+    component: LookbookComponent
   }
 ];
 
