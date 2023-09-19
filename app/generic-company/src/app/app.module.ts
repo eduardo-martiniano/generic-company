@@ -8,6 +8,7 @@ import { VideosComponent } from './pages/videos/videos.component';
 import { CatalogComponent } from './pages/catalog/catalog.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { LookbookComponent } from './pages/lookbook/lookbook.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LookbookComponent } from './pages/lookbook/lookbook.component';
     VideosComponent,
     CatalogComponent,
     ProductCardComponent,
-    LookbookComponent
+    LookbookComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
