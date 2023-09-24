@@ -4,6 +4,7 @@ import { VideosComponent } from './pages/videos/videos.component';
 import { CatalogComponent } from './pages/catalog/catalog.component';
 import { LookbookComponent } from './pages/lookbook/lookbook.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: "contact",
     component: ContactComponent
+  },
+  {
+    path: "cart",
+    component: CartComponent
   }
 ];
 

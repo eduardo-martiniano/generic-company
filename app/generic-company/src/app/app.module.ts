@@ -9,6 +9,7 @@ import { CatalogComponent } from './pages/catalog/catalog.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { LookbookComponent } from './pages/lookbook/lookbook.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     CatalogComponent,
     ProductCardComponent,
     LookbookComponent,
-    ContactComponent
+    ContactComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
