@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th><span>Produto</span></th>
+    <th><span>Preço</span></th>
+    <th><span>Quantidade</span></th>
+    <th><span>Subtotal</span></th>
+  </tr>
+  <tr *ngFor="let item of items">
+    <td class="td-product-avatar">
+      <button class="button-remove"><strong>X</strong></button>
+      <img src="{{item.imageUrl}}" alt="">
+      <span>{{item.name}}</span>
+    </td>
+    <td>{{item.price}}</td>
+    <td>{{item.count}}</td>
+    <td>R$ {{item.price * item.count}}</td>
+  </tr>
+</table>

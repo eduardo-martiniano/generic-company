@@ -1,0 +1,48 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 1500px;
+  font-size: 22px;
+}
+
+table img {
+  width: 150px;
+}
+
+td, th {
+  text-align: center;
+  padding: 8px;
+}
+
+th span {
+  font-size: 25px;
+}
+
+tr:not(:last-child) td {
+  border-bottom: 1px solid #ccc;
+}
+
+.td-product-avatar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button-remove {
+  font-size: 18px;
+  border-radius: 22px;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-remove:hover {
+  background-color: red;
+  color: white;
+}
+
+

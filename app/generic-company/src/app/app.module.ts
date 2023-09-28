@@ -10,6 +10,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { LookbookComponent } from './pages/lookbook/lookbook.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { TableCartComponent } from './components/table-cart/table-cart.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CartComponent } from './pages/cart/cart.component';
     ProductCardComponent,
     LookbookComponent,
     ContactComponent,
-    CartComponent
+    CartComponent,
+    TableCartComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 <h1>Cart</h1>
 <div class="content">
-  <div class="container-empty-cart">
+  <div class="container-empty-cart" *ngIf="cartIsEmpty">
     <div class="empty-cart">
       <span>Seu carrinho está vazio</span>
     </div>
@@ -9,6 +9,16 @@
     class="button-back-store">
       RETORNAR PARA LOJA
     </button>
+  </div>
+  <div class="cart-list-items">
+    <app-table-cart></app-table-cart>
+  </div>
+  <div class="buttons-footer-header">
+    <div class="cupom-input-div">
+      <input type="text" placeholder="Código do cumpom" class="cupom-input">
+      <button>APLICAR CUPOM</button>
+    </div>
+    <button routerLink="/">VOLTAR PARA LOJA</button>
   </div>
 </div>
 
