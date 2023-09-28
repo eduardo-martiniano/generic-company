@@ -7,7 +7,7 @@
   </tr>
   <tr *ngFor="let item of items">
     <td class="td-product-avatar">
-      <button class="button-remove"><strong>X</strong></button>
+      <button class="button-remove" (click)="removeItem(item.id)"><strong>X</strong></button>
       <img src="{{item.imageUrl}}" alt="">
       <span>{{item.name}}</span>
     </td>

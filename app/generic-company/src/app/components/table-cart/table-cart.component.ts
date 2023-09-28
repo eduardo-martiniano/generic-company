@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemCart } from 'src/app/models/item-cart';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-table-cart',
@@ -8,16 +9,17 @@ import { ItemCart } from 'src/app/models/item-cart';
 })
 export class TableCartComponent implements OnInit {
 
-  items: ItemCart[] = [
-    {id: 1, name: "CAMISETA CARA", count: 2, price: 199.00, imageUrl: "https://highcompanybr.com/wp-content/uploads/2023/09/Hoodie_Logos_X-High_Black-300x300.jpg"},
-    {id: 1, name: "CAMISETA CARA", count: 2, price: 199.00, imageUrl: "https://highcompanybr.com/wp-content/uploads/2023/09/Hoodie_Logos_X-High_Black-300x300.jpg"},
-    {id: 1, name: "CAMISETA CARA", count: 2, price: 199.00, imageUrl: "https://highcompanybr.com/wp-content/uploads/2023/09/Hoodie_Logos_X-High_Black-300x300.jpg"},
-    {id: 1, name: "CAMISETA CARA", count: 2, price: 199.00, imageUrl: "https://highcompanybr.com/wp-content/uploads/2023/09/Hoodie_Logos_X-High_Black-300x300.jpg"}
-  ]
+  items: ItemCart[] = [];
 
-  constructor() { }
+  constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
+    this.items = JSON.parse(localStorage.getItem("cart") ?? "[]");
   }
 
+  removeItem(id: number) {
+    this.items = this.items.filter(x => x.id != id);
+    this.cartService.removeItem(id);
+    this.cartService.carChangedEvent();
+  }
 }
