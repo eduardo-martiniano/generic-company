@@ -5,6 +5,7 @@ import { CatalogComponent } from './pages/catalog/catalog.component';
 import { LookbookComponent } from './pages/lookbook/lookbook.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { ProductComponent } from './components/product/product.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: "cart",
     component: CartComponent
+  },
+  {
+    path: "products",
+    component: ProductComponent
   }
 ];
 

@@ -1,0 +1,37 @@
+.content {
+  /* background-color: red; */
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  /* background-color: aqua; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.infos {
+  /* background-color: blueviolet; */
+  width: 50%;
+}
+.infos p {
+  margin: 0;
+}
+
+.infos h1 {
+  margin: 0;
+}
+
+.price {
+  font-size: 35px;
+}
+
+.description {
+  margin-top: 40px !important;
+  font-size: 23px;
+  width: 80%;
+  /* background-color: rebeccapurple; */
+}

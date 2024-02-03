@@ -11,6 +11,7 @@ import { LookbookComponent } from './pages/lookbook/lookbook.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { TableCartComponent } from './components/table-cart/table-cart.component';
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TableCartComponent } from './components/table-cart/table-cart.component
     LookbookComponent,
     ContactComponent,
     CartComponent,
-    TableCartComponent
+    TableCartComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

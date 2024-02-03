@@ -10,15 +10,15 @@
       RETORNAR PARA LOJA
     </button>
   </div>
-  <div class="cart-list-items">
+  <div class="cart-list-items" *ngIf="!cartIsEmpty">
     <app-table-cart></app-table-cart>
   </div>
   <div class="buttons-footer-header">
-    <div class="cupom-input-div">
+    <div class="cupom-input-div" *ngIf="!cartIsEmpty">
       <input type="text" placeholder="Código do cumpom" class="cupom-input">
       <button>APLICAR CUPOM</button>
     </div>
-    <button routerLink="/">VOLTAR PARA LOJA</button>
+    <!-- <button routerLink="/">VOLTAR PARA LOJA</button> -->
   </div>
 </div>
 
